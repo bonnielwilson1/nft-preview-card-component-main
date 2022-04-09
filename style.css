@@ -1,4 +1,4 @@
-- Mobile: 375px
+/* - Mobile: 375px
 - Desktop: 1440px
 
 - Soft blue: hsl(215, 51%, 70%)
@@ -11,4 +11,75 @@
 
 - Font size (paragraph): 18px
 - Weights: 300, 400, 600
-font-family: 'Outfit', sans-serif;
+font-family: 'Outfit', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif; 
+    font-size: 18px;
+    padding: 1.25rem;
+}
+.container {
+    background-color: hsl(216, 50%, 16%);
+    color: hsl(0, 0%, 100%, 70%);
+    padding: 2rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+}
+p {
+    font-weight: 300;
+}
+h2 {
+    color: white;
+    margin: 1rem 0;
+}
+.container ul li:first-child {
+    color: hsl(178, 100%, 50%);
+    
+}
+.container ul li {
+    display: flex;
+    align-items: center;
+}
+.container ul li img {
+    margin-right: 0.5rem;
+}
+.container .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
+}
+.container .avatar img {
+    width: 2.5rem;
+    border: 3px solid hsl(0, 0%, 100%, 70%);
+    border-radius: 50%;
+    margin-right: 1.5rem;
+
+}
+span {
+    color: white;
+    font-weight: 400;
+}
+
+@media(min-width: 500px)  {
+    .container {
+        width: 450px;
+        margin: 0 auto 1rem;
+    }
+}
