@@ -19,6 +19,7 @@ font-family: 'Outfit', sans-serif; */
 }
 img {
     max-width: 100%;
+    border-radius: 1rem;
 
 }
 ul {
@@ -40,6 +41,7 @@ body {
     padding: 2rem;
     border-radius: 0.6rem;
     margin-bottom: 1rem;
+    
 }
 p {
     font-weight: 300;
@@ -76,6 +78,45 @@ span {
     color: white;
     font-weight: 400;
 }
+span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.container .main-img img:hover {
+    cursor: pointer;
+
+}
+.container .main-img {
+    position: relative;
+}
+.container .main-img .overlay {
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 65%);
+    width: 100%;
+    height: calc(100%-4px);
+    z-index: 999;
+    opacity: 0;
+    border-radius: 1rem;
+    transition: opacity 0.3s ease-in-out;
+}
+.container .main-img .overlay img {
+    display: block;
+    width: auto;
+    margin: 44%;
+}
+.container .main-img .overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
 
 @media(min-width: 500px)  {
     .container {
